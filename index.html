@@ -55,7 +55,7 @@
 
 
     <!-- <tr onmouseout="category_level_nerf_stop()" onmouseover="category_level_nerf_start()"> bgcolor="#ffffd0"> -->
-      <tr onmouseout="category_level_nerf_stop()" onmouseover="category_level_nerf_start()">
+    <tr onmouseout="category_level_nerf_stop()" onmouseover="category_level_nerf_start()">
       <td style="padding:16px;width:20%;vertical-align:middle">
         <div class="one">
           <div class="two" id='category_level_nerf_image'><video  width=100% height=100% muted autoplay loop>
@@ -85,10 +85,92 @@
         <br>
         <span class="tag green">Robotics and Automation Letters (RA-L), 2024</span>
         <br>
-        <a href="https://arxiv.org/abs/2406.08176">arXiv</a>
+        <a href="https://arxiv.org/abs/2406.08176">arXiv</a> /
+        <a href="https://github.com/Taekbum/category-nerf-reconstruction-official">github</a>
         <p></p>
         <p>
           We introduce category-level neural fields that learn meaningful common 3D information among objects belonging to the same category present in the scene.
+        </p>
+      </td>
+    </tr>
+
+
+
+    <tr onmouseout="object_remover_stop()" onmouseover="object_remover_start()">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='object_remover_image'>
+          <img src="images/object_remover.jpg"  width=100% height=100%></div>
+          <img src="images/object_remover.jpg"  width=100% height=100%></div>
+        </div>
+        <script type="text/javascript">
+          function object_remover_start() {
+            document.getElementById('object_remover_image').style.opacity = "1";
+          }
+
+          function object_remover_stop() {
+            document.getElementById('object_remover_image').style.opacity = "0";
+          }
+          object_remover_stop()
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="https://taekbum.github.io/">
+			<span class="papertitle">Object Remover Performance Evaluation Methods Using Classwise Object Removal Images
+</span>
+        </a>
+        <br>
+				Changsuk Oh, Dongseok Shim, <strong>Taekbeom Lee</strong>, H. Jin Kim
+        <br>
+        <span class="tag green">Sensors, 2024</span>
+        <br>
+        <a href="https://arxiv.org/abs/2404.11104">arXiv</a>
+        <p></p>
+        <p>
+          We propose new evaluation methods tailored to gauge the performance of an object remover. We confirm that the proposed methods can make judgments consistent with human evaluators in the COCO dataset, and that they can produce measurements aligning with those using object removal ground truth in the self-acquired dataset.
+        </p>
+      </td>
+    </tr>
+
+
+
+    <tr onmouseout="symmetry_aware_object_slam_stop()" onmouseover="symmetry_aware_object_slam_start()">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='symmetry_aware_object_slam_image'><video  width=100% height=100% muted autoplay loop>
+          <source src="images/symmetry_aware_object_slam.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/symmetry_aware_object_slam_thumbnail.jpg' width="160">
+        </div>
+        <script type="text/javascript">
+          function symmetry_aware_object_slam_start() {
+            document.getElementById('symmetry_aware_object_slam_image').style.opacity = "1";
+          }
+
+          function symmetry_aware_object_slam_stop() {
+            document.getElementById('symmetry_aware_object_slam_image').style.opacity = "0";
+          }
+          symmetry_aware_object_slam_stop()
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="https://taekbum.github.io/">
+			<span class="papertitle">Object-based SLAM utilizing unambiguous pose parameters considering general symmetry types
+</span>
+        </a>
+        <br>
+				<strong>Taekbeom Lee*</strong>, Youngseok Jang*, H. Jin Kim
+        <br>
+        (*equal contribution)
+        <br>
+        <br>
+        <span class="tag green">ICRA, 2023</span>
+        <br>
+        <a href="https://arxiv.org/abs/2303.07872">arXiv</a>
+        <p></p>
+        <p>
+          This work proposes a system for robustly optimizing the pose of cameras and objects even in the presence of symmetric objects.
         </p>
       </td>
     </tr>
