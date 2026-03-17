@@ -7,8 +7,7 @@
 
     <meta name="author" content="Taekbeom Lee">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
     
   </head>
 
@@ -28,11 +27,11 @@
                 Before that, I received Bachelor's degrees in <a href="https://me.snu.ac.kr/en/">Mechanical and Aerospace Engineering at SNU.</a>
                 </p>
                 <p>
-                  I worked on object SLAM, 3d reconstruction based on neural implicit representation, active mapping system, and reliable visual localization.
+                  I've worked on embodied exploration and reasoning, active mapping system, 3d reconstruction based on neural implicit representation, and object SLAM.
                 </p>
                 <p style="text-align:center">
                   <a href="mailto:ltb1128@snu.ac.kr">Email</a> &nbsp;/&nbsp;
-                  <!-- <a href="data/JonBarron-CV.pdf">CV</a> &nbsp;/&nbsp; -->
+                  <a href="data/TaekbeomLee-CV.pdf">CV</a> &nbsp;/&nbsp;
                   <a href="https://scholar.google.com/citations?user=_3SZKckAAAAJ&hl=ko">Scholar</a> &nbsp;/&nbsp;
                   <a href="https://github.com/Taekbum">Github</a> &nbsp;/&nbsp;
                   <a href="https://www.linkedin.com/in/taekbeom-lee-7a95a2279/"> LinkedIn</a>
@@ -48,12 +47,55 @@
               <td style="padding:16px;width:100%;vertical-align:middle">
                 <h2>Research</h2>
                 <p>
-                  I'm interested in 3d computer vision, NeRF / gaussian splatting, SLAM, visual-language foundation models, and 3d scene graph.
+                  I'm interested in embodied AI (embodied question answering, multi-modal navigation, task planning, etc.), 3d computer vision (3d reconstruction, 3d generative models, etc.), SLAM (object SLAM, radiance field based, etc.), world models, 3d vision foundation models, etc.
                 </p>
               </td>
             </tr>
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+
+
+    <tr onmouseout="here_stop()" onmouseover="here_start()">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='here_image'><video width=100% height=100% muted autoplay loop>
+          <source src="images/here.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/here_thumbnail.png' width="160">
+        </div>
+        <script type="text/javascript">
+          function here_start() {
+            document.getElementById('here_image').style.opacity = "1";
+          }
+
+          function here_stop() {
+            document.getElementById('here_image').style.opacity = "0";
+          }
+          here_stop()
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="https://taekbum.github.io/">
+          <span class="papertitle">HERE: Hierarchical Active Exploration of Radiance Field with Epistemic Uncertainty Minimization</span>
+        </a>
+        <br>
+        <strong>Taekbeom Lee*</strong>, Dabin Kim*, Youngseok Jang, H. Jin Kim
+        <br>
+        (*equal contribution)
+        <br>
+        <br>
+        <span class="tag green">Robotics and Automation Letters (RA-L), 2026</span>
+        <br>
+        <a href="https://taekbum.github.io/here/">project page</a> /
+        <a href="https://www.youtube.com/watch?v=FkY7t2IeWhE">video</a>
+        <p></p>
+        <p>
+          We present HERE, an active 3D scene reconstruction framework based on neural radiance fields, enabling high-fidelity implicit mapping via camera trajectory generation driven by epistemic uncertainty estimated through evidential deep learning, for efficient data acquisition and precise scene reconstruction.
+        </p>
+      </td>
+    </tr>
 
 
 
@@ -89,7 +131,8 @@
         <span class="tag green">Robotics and Automation Letters (RA-L), 2024</span>
         <br>
         <a href="https://arxiv.org/abs/2406.08176">arXiv</a> /
-        <a href="https://github.com/Taekbum/category-nerf-reconstruction-official">github</a>
+        <a href="https://github.com/Taekbum/category-nerf-reconstruction-official">github</a> /
+        <a href="https://www.youtube.com/watch?v=f1YA10qoAwc&t=2s">video</a>
         <p></p>
         <p>
           We introduce category-level neural fields that learn meaningful common 3D information among objects belonging to the same category present in the scene.
@@ -170,24 +213,14 @@
         <br>
         <span class="tag green">ICRA, 2023</span>
         <br>
-        <a href="https://arxiv.org/abs/2303.07872">arXiv</a>
+        <a href="https://arxiv.org/abs/2303.07872">arXiv</a> /
+        <a href="https://www.youtube.com/watch?v=aVc4x3hsVo4&t=10s">video</a>
         <p></p>
         <p>
           This work proposes a system for robustly optimizing the pose of cameras and objects even in the presence of symmetric objects.
         </p>
       </td>
     </tr>
-
-
-          <table width="100%" align="center" border="0" cellpadding="20"><tbody>
-            <tr>
-              <td>
-                <h2>Academic Service</h2>
-              </td>
-              
-            </tr>
-            
-          </tbody></table>
 
 
           <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
@@ -197,7 +230,37 @@
               </td>
             </tr>
 
-            
+
+            <tr onmouseout="l3in_stop()" onmouseover="l3in_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <img src='images/samsung.jpg' width="160">
+                </div>
+                <script type="text/javascript">
+                  function l3in_start() {
+                    document.getElementById('l3in').style.opacity = "1";
+                  }
+
+                  function l3in_stop() {
+                    document.getElementById('l3in').style.opacity = "0";
+                  }
+                  l3in_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <span class="papertitle">L3IN: Intelligent Robot Navigation with Efficient LLM Interaction, Long-Term Consistency, and Location-Specific Expertise</span>
+                <br>
+
+                <p></p>
+                <p>
+                  Supported by Samsung Research Funding &amp; Incubation Center for Future Technology of Samsung Electronics
+                  <br>
+                  <em>Dec. 2024 - Nov. 2027</em>
+                </p>
+              </td>
+            </tr>
+
+
             <tr onmouseout="hmc_stop()" onmouseover="hmc_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one">
@@ -205,13 +268,13 @@
                   <source src="images/CARLA.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                   </video></div> -->
-                  <img src='images/hmc.png' width="160">
+                  <img src='images/hmc_new.png' width="160">
                 </div>
                 <script type="text/javascript">
                   function hmc_start() {
                     document.getElementById('hmc').style.opacity = "1";
                   }
-      
+
                   function hmc_stop() {
                     document.getElementById('hmc').style.opacity = "0";
                   }
@@ -219,19 +282,60 @@
                 </script>
               </td>
               <td style="padding:20px;width:75%;vertical-align:middle">
-                <span class="papertitle">Development of uncertainty quantification in road condition estimator for safe prediction</span>
+                <span class="papertitle">Uncertainty quantification and OOD detection in road condition estimator</span>
                 <br>
-                
+
                 <p></p>
                 <p>
-                  with HD Hyundai Motor Company
+                  Co-work with Hyundai Motor Company
                   <br>
-                  <em>Oct. 2024 - present</em>
+                  <em>Oct. 2024 - Sep. 2025</em>
                 </p>
               </td>
             </tr>
 
+          </tbody></table>
+
+
+          <table width="100%" align="center" border="0" cellpadding="20"><tbody>
+            <tr>
+              <td>
+                <h2>Awards and Achievements</h2>
+              </td>
+            </tr>
+          </tbody></table>
+
+          <ul>
+            <li>[Scholarship] Brain Korea 21 (BK21) Fellowship for Excellent Graduate Students (Mar. 2023 - Jun. 2023)</li>
+            <li>[Scholarship] National Science &amp; Technology Scholarship (Mar. 2017 - Dec. 2020)</li>
+          </ul>
+
+
+          <table width="100%" align="center" border="0" cellpadding="20"><tbody>
+            <tr>
+              <td>
+                <h2>Academic Service</h2>
+              </td>
+
+            </tr>
+
+          </tbody></table>
+
           <ul>
             <li>Conference reviewer for ICRA'25</li>
             <li>Conference reviewer for ICCV'25</li>
+          </ul>
+
+
+          <table width="100%" align="center" border="0" cellpadding="20"><tbody>
+            <tr>
+              <td>
+                <h2>Teaching</h2>
+              </td>
+            </tr>
+          </tbody></table>
+
+          <ul>
+            <li>[Research Assistant] Undergraduate Research Opportunity Program (Advisor: Pf. H. Jin Kim), Seoul National University (2024 Fall)</li>
+            <li>[Teaching Assistant] Integrated Aerospace Systems Design and Manufacturing 1 &amp; 2, Seoul National University (2024 Spring)</li>
           </ul>
